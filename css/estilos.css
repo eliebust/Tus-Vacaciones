@@ -1,0 +1,313 @@
+/* Inicio de Landing Page*/
+body, main{
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Love Ya Like A Sister';
+}
+
+/* Menu */
+
+header{
+	margin:0;
+  width: 100%;
+  color: #fff;
+  background-color: #BB130E;
+  display: inline-flex;
+}
+
+nav {
+  font-family: 'DM Serif Text';
+  overflow: auto;
+}
+
+#menu a, #menu h1, #menu ul, #menu li {
+	text-decoration: none;
+  font-family: 'Love Ya Like A Sister';
+  margin: 5px 5px;
+  display: inline-flex;
+}
+
+.enlace{
+  color: #FFF;
+}
+
+.enlace:hover{
+  color: #00FF00;
+}
+
+/* Cuerpo principal */
+.principal{
+  margin: 0;
+	width:100%;
+	height:500px;
+  background-image:url(../images/inicial2.JPG);
+}
+
+.contenedor{
+	position: absolute;
+	top: 120px;
+	left: 600px;
+	width: 627px;
+	background: rgba(247, 133, 39, 0.5);
+  border-radius: 20px;
+}
+
+.contenedor h2{
+  margin: 20px;
+  font-family: 'Love Ya Like A Sister';
+  font-size: 38px;
+}
+
+.contenedor p{
+  margin: 20px;
+  font-family: 'DM Serif Text';
+  font-size: 20px;
+}
+
+.contenido{
+  width: 100%;
+  height: 100%;
+}
+
+div[class^='contenido']{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lugarplaya {
+  background-color: #FEF0D9;
+}
+.lugarparque {
+  background-color: #D9FEEE;
+}
+.lugarrio {
+  background-color: #FEF0D9;
+}
+
+.imagen-principal, .imagen-secundaria {
+  margin: 0;
+  width: 300px;
+  height: 280px;
+}
+
+.descripcion{
+  margin: 20px 40px;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#playa img, #parque img, #rio img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+  border-radius: 25px;
+}
+
+#playa img:hover, #parque img:hover, #rio img:hover{
+	width: 105%;
+  height: 105%;
+}
+
+h2{
+  margin: 20px;
+  font-family: 'Love Ya Like A Sister';
+  font-size: 60px;
+}
+
+img{
+  align-content: center;
+  width: 300px;
+  height: 280px;
+  border-radius: 25px;
+}
+
+p{
+  font-family: 'DM Serif Text';
+}
+
+.informacion{
+  margin-left: 80px;
+  float: left;
+  width: 500px;
+  height: 300px;
+}
+
+.contacto{
+  margin: 20px;
+  margin-right: 60px;
+  float: right;
+  background: rgba(255, 250, 205, 0.5);
+  width: 550px;
+  height: 370px;
+  border: 1px solid #F78527;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.contacto input{
+  width: 100%;
+  border: 1px solid #F78527;
+}
+
+.contacto textarea{
+  width: 100%;
+  height: 180px;
+  border: 1px solid #F78527;
+}
+
+.contacto h3 {
+  margin: 10px 20px;
+}
+
+form{
+  margin: 10px 20px;
+}
+
+.boton{
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-family: 'Love Ya Like A Sister';
+  font-size: 16px;
+  background: rgb(247, 133, 39);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Diseño tableta. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body, header, main, footer{
+  	width: 100%;
+    margin: 0px;
+  }
+
+  #menu {
+    justify-content: center;
+  }
+
+  .contenedor {
+   position: absolute;
+   top: 120px;
+   left: 140px;
+   width:500px;
+   height: 180px;
+  }
+
+  .contenedor h2{
+  	font-size: 36px;
+  }
+
+  .contenedor p{
+    font-size: 18px;
+  }
+
+  #playa .imagen-principal, #parque .imagen-principal, #rio .imagen-principal {
+  	display: none;
+  }
+
+  .descripcion{
+      margin: 20px 20px;
+  }
+
+  .descripcion h2 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .descripcion p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #playa .imagen-secundaria, #parque .imagen-secundaria, #rio .imagen-secundaria {
+    margin: 20px 20px;
+    width: 250px;
+    height: 250px;
+    width: 60%;
+  }
+
+  .informacion {
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .contacto {
+    margin: 20px 30px;
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+
+/* Diseño telefono. */
+@media (min-width: 221px) and (max-width: 767px) {
+body, header, main, footer, nav{
+	width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+#menu,  #menu h1, #menu li{
+  flex-direction: column;
+  display: block;
+  margin: 0px 0px;
+  justify-content: center;
+}
+
+.contenedor {
+   position: absolute;
+   top: 100px;
+   left: 20px;
+   width: 90%;
+   text-align: left;
+  }
+
+  .contenedor h2 {
+  	font-size: 30px;
+  }
+
+  .contenedor p {
+    font-size: 18px;
+  }
+
+  #playa .imagen-principal, #parque .imagen-principal, #rio .imagen-principal {
+  	display: none;
+  }
+
+  .contenido  {
+    flex-direction: column;
+  }
+
+  .descripcion {
+    width: 100%;
+    height: 90%;
+  }
+
+  #playa .imagen-secundaria, #parque .imagen-secundaria, #rio .imagen-secundaria {
+    margin: 0px 0px 30px 0px;
+    width: 280px;
+    height: 250px;
+    width: 60%;
+  }
+
+  .informacion {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contacto {
+    margin: 0px 40px 40px 0px;
+    width: 80%;
+    text-align: center;
+  }
+
+}
